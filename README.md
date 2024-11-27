@@ -29,6 +29,11 @@ This is a general file storage api system built with Python FastAPI, Cloudinary 
 - uvicorn main:app --reload
 
 ## Endpoints
+- /register/ - POST {email}
 - /upload/ - POST :- file
 - /files/ - GET
 - /files/{file_id} - GET
+- /files/{file_id} - PUT
+
+## Examples
+- curl -X GET "http://127.0.0.1:8000/files/" -H "private-id: 123e4567-e89b-12d3-a456-426614174000"
